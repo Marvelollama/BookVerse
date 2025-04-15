@@ -6,7 +6,7 @@ class Book:
         self.copies = copies
     
     def __str__(self):
-        return f"{self.title} is written by {self.author} (ISBN: {self.isbn}) and has {self.copies} left"
+        return f"{self.title} is written by {self.author} (ISBN: {self.isbn}) ,has {self.copies} left"
     
     def __add__(self, num):
         return Book(self.copies + num)
