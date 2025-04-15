@@ -1,13 +1,13 @@
 class Member:
+    _id_counter = 1
     def __init__(self, name):
-        _id_counter = 1
         self.name = name
-        self._id_counter = _id_counter
+        self._id = Member._id_counter
         _id_counter += 1
         self.borrowed_books = []
         
     def __str__(self):
-        return f"{self.name} (ID: {self._id_counter}) has borrowed {self.borrowed_books}"
+        return f"{self.name} (ID: {self.id}) has borrowed {self.borrowed_books}"
     
     def borrow_book(self, book):
         self.borrowed_books.append(book)

@@ -1,8 +1,8 @@
 from book import Book
 
 class RareBook(Book):
-    def __init__(self, name, author, isbn, condition):
-        super().__init__(name, author, isbn)
+    def __init__(self, name, author, isbn, copies, condition):
+        super().__init__(name, author, isbn, copies)
         self.condition = condition
     
     def __str__(self):

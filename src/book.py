@@ -9,8 +9,8 @@ class Book:
         return f"{self.title} is written by {self.author} (ISBN: {self.isbn}) ,has {self.copies} left"
     
     def __add__(self, num):
-        return Book(self.copies + num)
+        return Book(self.title, self.author, self.isbn, self.copies + num)
     
     def __sub__(self, num):
-        return Book(self.copies - num)
+        return Book(self.title, self.author, self.isbn, self.copies - num)
     

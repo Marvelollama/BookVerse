@@ -7,7 +7,7 @@ class Library:
         self.books[book.isbn] = book
     
     def remove_book(self, book):
-        self.books.remove(book.isbn)
+        del self.books[book.isbn]
         
     def register_member(self, member):
         self.members[member.id] = member
